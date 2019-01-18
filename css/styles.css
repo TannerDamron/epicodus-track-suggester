@@ -6,8 +6,6 @@ body {
     text-align: center;
     background-color: #BEFFFF;
     margin-bottom: 3%;
-
-
 }
 
 .title {
@@ -22,10 +20,56 @@ img {
   margin: 3% 0 3% 0;
 }
 
- .modal-body {
-  text-align: center;
+button:hover {
+  cursor: pointer;
+}
+
+p {
+  font-size: 40px;
+  font-weight: bold;
+  text-shadow: 2px 2px #57E1E1;
+}
+
+h2 {
+  text-shadow: 2px 2px #57E1E1;
+  padding-bottom: 20px;
 }
 
 h5 {
-  color: red;
+  font-size: 40px;
+  margin-left: 35%;
+  color: #E1F7F7;
+  text-shadow: 2px 2px black;
+}
+
+.modal-body {
+  background-image: url("../img/epicodus-2.png");
+  background-repeat: repeat;
+}
+
+.closeModal {
+  border: 1px solid transparent;
+  border-radius: 25%;
+  background-color: #57E1E1;
+}
+
+.xModal {
+  background-color: #57E1E1;
+}
+
+.click:hover {
+  cursor: pointer;
+}
+
+.modal-header {
+  background-image: linear-gradient(to bottom, white, #00C8C8);
+}
+
+.modal-footer {
+  background-image: linear-gradient(white, #00C8C8);
+}
+
+.label {
+  font-size: 20px;
+  font-weight: bold;
 }

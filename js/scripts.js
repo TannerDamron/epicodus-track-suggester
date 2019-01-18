@@ -52,9 +52,9 @@ $(document).ready(function() {
      $('html, body').animate({ scrollTop: 0 }, 'slow');
   });
   $(".closeModal").click(function(){
-      $(".modal").hide();
+      $(".modal").hide(700);
   });
   $(".xModal").click(function(){
-    $(".modal").hide();
+    $(".modal").hide(700);
   });
 });
