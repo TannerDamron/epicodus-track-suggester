@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Epicodus Track Suggester</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Track Suggester</h1>
+      <p>Complete the following questionnaire to see what programming language track we suggest!</p>
+      <div is="php">
+        <h1><span class="name"></span>, you should think more about attending the PHP/Drupal track at Epicodus!</h1>
+      </div>
+      <div id="ruby">
+        <h1><span class="name"></span>, you should think more about attending the Ruby/Rails track at Epicodus!</h1>
+      </div>
+      <div id="css">
+        <h1><span class="name"></span>, you should think more about attending the CSS/Design track at Epicodus!</h1>
+      </div>
+      <div id="java">
+        <h1><span class="name"></span>, you should think more about attending the Java/Android track at Epicodus!</h1>
+      </div>
+      <div id="csharp">
+        <h1><span class="name"></span>, you should think more about attending the C#/.NET track at Epicodus!</h1>
+      </div>
+      <form id="form">
+        <label for="name">Name</label>
+        <input id="name" type="text"><br><br>
+        <label class="label" for="end">Would you prefer to work in front-end development or back-end development?</label>
+        <div class="radio">
+          <label><input type="radio" name="end" value="front">Front-end</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="end" value="back">Back-end</label>
+        </div>
+        <label class="label" for="interest">What are you more interested in?</label>
+        <div class="radio">
+          <label><input type="radio" name="interest" value="webapp">Interactive Web Applications</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="interest" value="servers">Servers</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="interest" value="styling">Styling Web Pages</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="interest" value="data">Data Collection</label>
+        </div><label class="label" for="device">What kind of device would you prefer to be programming for?</label>
+        <div class="radio">
+          <label><input type="radio" name="device" value="android">Android Phones</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="device" value="iphone">iPhone (iOS)</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="device" value="mac">Mac</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="device" value="pc">PC</label>
+        </div>
+        <label class="label" for="device">What kind of company would you prefer to work for?</label>
+        <div class="radio">
+          <label><input type="radio" name="company" value="enterprise">Enterprise-Level</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="company" value="small">Small Brands</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="company" value="startup">Startups</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="company" value="freelance">Freelance Programmer</label>
+        </div>
+        <label class="label" for="environment">What type of environment would you like to work in?</label>
+        <div class="radio">
+          <label><input type="radio" name="environment" value="solo">Solo</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="environment" value="pair">Pair Programming</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="environment" value="collaborative">Collaborative</label>
+        </div>
+        <button type="submit" class="btn btn-outline-info btn-lg" id="btn">Click to show which Epicodus track suits you best!</button>
+      </form>
+    </div>
+  </body>
+</html>
