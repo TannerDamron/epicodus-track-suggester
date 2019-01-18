@@ -1,3 +1,31 @@
 #ruby, #css, #java, #csharp, #php {
   display: none;
 }
+
+body {
+    text-align: center;
+    background-color: #BEFFFF;
+    margin-bottom: 3%;
+
+
+}
+
+.title {
+  text-shadow: 2px 2px black;
+  color: #57E1E1;
+  font-family: helvetica;
+}
+
+img {
+  width: 20%;
+  height: 20%;
+  margin: 3% 0 3% 0;
+}
+
+ .modal-body {
+  text-align: center;
+}
+
+h5 {
+  color: red;
+}

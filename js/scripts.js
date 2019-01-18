@@ -13,41 +13,48 @@ $(document).ready(function() {
     } else if (!end || !interest || !device || !company || !environment){
       alert("Please fill in all choices")
     } else if (end === "front"  && interest === "styling"){
-      $("#css").fadeIn(2000);
+      $("#myModalcss").fadeIn();
       $("#ruby").hide();
       $("#java").hide();
       $("#csharp").hide();
       $("#php").hide();
     } else if (end === "front" && interest != "styling" && device === "android" && environment != "solo"){
-      $("#ruby").fadeIn(2000);
+      $("#myModalruby").fadeIn();
       $("#css").hide();
       $("#java").hide();
       $("#csharp").hide();
       $("#php").hide();
     } else if (end === "back" && interest != "styling" && device === "android"){
-      $("#java").fadeIn(2000);
+      $("#myModaljava").fadeIn();
       $("#ruby").hide();
       $("#css").hide();
       $("#csharp").hide();
       $("#php").hide();
     } else if (interest != "styling" && device != "android" && company != "freelance"){
-      $("#csharp").fadeIn(2000);
+      $("#myModalcsharp").fadeIn();
       $("#ruby").hide();
       $("#java").hide();
       $("#css").hide();
       $("#php").hide();
     } else if (interest != "styling" && device != "android" && environment != "pair" && company != "startup") {
-      $("#ruby").fadeIn(2000);
+      $("#myModalruby").fadeIn();
       $("#csharp").hide();
       $("#java").hide();
       $("#css").hide();
       $("#php").hide();
     } else {
-      $("#php").fadeIn(2000);
+      $("#myModalphp").fadeIn();
       $("#csharp").hide();
       $("#java").hide();
       $("#css").hide();
       $("#ruby").hide();
     }
+     $('html, body').animate({ scrollTop: 0 }, 'slow');
+  });
+  $(".closeModal").click(function(){
+      $(".modal").hide();
+  });
+  $(".xModal").click(function(){
+    $(".modal").hide();
   });
 });

@@ -9,23 +9,107 @@
   </head>
   <body>
     <div class="container">
-      <h1 class="title">Track Suggester</h1>
+      <img src="img/epicodus.png" alt="Epicodus Logo">
+      <h1 class="title">Epicodus Track Suggester</h1>
       <p>Complete the following questionnaire to see what programming language track we suggest!</p>
-      <div id="php">
-        <h1><span class="name"></span>, you should think more about attending the PHP/Drupal track at Epicodus!</h1>
+
+      <div id="myModalphp" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Results!</h5>
+              <button class="xModal" type="submit" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p><span class="name"></span>, you should think more about attending the PHP/Drupal track at Epicodus!</p>
+            </div>
+            <div class="modal-footer">
+              <button class="closeModal" type="submit" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
       </div>
-      <div id="ruby">
-        <h1><span class="name"></span>, you should think more about attending the Ruby/Rails track at Epicodus!</h1>
+
+      <div id="myModalruby" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Results!</h5>
+              <button class="xModal" type="submit" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p><span class="name"></span>, you should think more about attending the Ruby/Rails track at Epicodus!</p>
+            </div>
+            <div class="modal-footer">
+              <button class="closeModal" type="submit" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
       </div>
-      <div id="css">
-        <h1><span class="name"></span>, you should think more about attending the CSS/Design track at Epicodus!</h1>
+
+      <div id="myModalcss" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Results!</h5>
+              <button class="xModal" type="submit" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p><span class="name"></span>, you should think more about attending the CSS/Design track at Epicodus!</p>
+            </div>
+            <div class="modal-footer">
+              <button class="closeModal" type="submit" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
       </div>
-      <div id="java">
-        <h1><span class="name"></span>, you should think more about attending the Java/Android track at Epicodus!</h1>
+
+      <div id="myModaljava" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Results!</h5>
+              <button class="xModal" type="submit" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p><span class="name"></span>, you should think more about attending the Java/Android track at Epicodus!</p>
+            </div>
+            <div class="modal-footer">
+              <button class="closeModal" type="submit" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
       </div>
-      <div id="csharp">
-        <h1><span class="name"></span>, you should think more about attending the C#/.NET track at Epicodus!</h1>
+
+
+      <div id="myModalcsharp" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Results!</h5>
+              <button class="xModal" type="submit" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p><span class="name"></span>, you should think more about attending the C#/.NET track at Epicodus!</p>
+            </div>
+            <div class="modal-footer">
+              <button class="closeModal" type="submit" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
       </div>
+
+
       <form id="form">
         <label for="name">Name</label>
         <input id="name" type="text"><br><br>
